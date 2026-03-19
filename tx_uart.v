@@ -66,8 +66,6 @@ always @(posedge clk_IN) begin
 								next_state <= idle;
 						  end
                 end
-
-                // -----------------
                 word_build: begin
                     if (PARITY == 2'h1) begin
                         parity_bit <= ^data_reg;
