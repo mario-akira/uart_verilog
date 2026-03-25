@@ -12,3 +12,11 @@ To simulate tx_uart.v with tx_uart_tb.v:
 >vvp tx_uart_tb
 
 >gtkwave uart_tx.vcd
+
+To simulate rx_uart.v with rx_uart_tb.v:
+
+>iverilog -o rx_tb rx_uart_tb.v ../modules/rx_uart.v
+
+>vvp rx_tb
+
+>gtkwave rx_uart.vcd
